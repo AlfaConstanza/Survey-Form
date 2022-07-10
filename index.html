@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey-Form</title>
+    <title>Wild Alta Montaña</title>
+    <!-- favicon, icono pestaña -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1 id="title">Wild Alta Montaña -  Formulario De Inscripción</h1>
+    <p id="description">Se parte de la Montaña, accede a descuentos y beneficios solo para socios.</p>
+    <form id="survey-form" action="">
+        <!-- Datos ingreso usuario -->
+        <fieldset> 
+            <label>Nombre<input id="name" type="text" placeholder="Nicolás"  autofocus required></label>
+            <label>Apellido<input id="Lastname" type="text" placeholder="Martínez" required></label>
+            <label>Email<input id="email" type="email" placeholder="nicolas.martinez@gmail.com" required></label>
+            <label>Contraseña<input id="password" type="password" placeholder="********" maxlength="8" required></label>
+        </fieldset>
+        <fieldset>
+        <!-- Datos personales -->
+            <label>Edad <input type="number" min="18" max="80" required/></label>
+            <label>Sexo
+            <label><input name="sexType" type="radio">Femenino</label>
+            <label><input name="sexType" type="radio">Masculino</label>
+            </label>
+            <label>Estado Físico
+                <select name="">
+                    <option selected disabled>Condición Física</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Muy buena">Muy buena</option>
+                </select>
+            </label>
+       </fieldset>
+       <fieldset>
+        <!-- checkbox disciplina y nivel experiencia -->
+            <p>Qué disciplina practicas y el nivel de experiencia de esta</p> 
+            <p> *puedes elegir más de una opción.</p>
+            <label>Escalada
+                <input type="checkbox"><p>Nivel 1 - Debutante</p>
+                <input type="checkbox"><p>Nivel 2 - Medio</p>
+                <input type="checkbox"><p>Nivel 3 - Avanzado</p>
+            </label>
+            <label>Alpinismo
+                <input type="checkbox">Nivel 1 - Debutante</p>
+                <input type="checkbox">Nivel 2 - Medio</p>
+                <input type="checkbox"><p>Nivel 3 - Avanzado</p>
+            </label>
+            <label>Esquí de travesía
+                <input type="checkbox"><p>Nivel 1 - Debutante</p>
+                <input type="checkbox"><p>Nivel 2 - Medio</p>
+                <input type="checkbox"><p>Nivel 3 - Avanzado</p>
+            </label>
+        </fieldset>
+        <!-- cuéntanos de ti  -->
+        <fieldset>
+            <label>Cuéntanos de ti, y coméntanos si quieres participar de salidas grupales, exclusivas para socios
+                <textarea name="" id="" cols="30" rows="3"></textarea>
+            </label>
+        </fieldset>
+    </form>
+    <footer>Wild Alta Montaña - Copyright &copy; 2022</footer>
 </body>
 </html>
